@@ -1,4 +1,5 @@
 module.exports = {
+    productionSourceMap:false,
     pages: {
         index: {
             entry: "./src/pages/index/index.js", // 入口js文件
