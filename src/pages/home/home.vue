@@ -7,15 +7,14 @@
 
 <script>
 import Header from '@/components/header.vue'
+import formatURL from '@/utils/formatURL'
 export default {
     components: {
         Header
     },
     created() {
         console.log('组件创建')
-        // console.log(window.location);
-        let search = window.location.search.slice(1)
-        console.log(search);
+        formatURL(window.location.search)
     }
 }
 </script>
